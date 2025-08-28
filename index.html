@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Excel Replica</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Quick Access Toolbar -->
+    <div id="quickAccessToolbar">
+      <button id="saveBtn" title="Save (Export CSV)">💾 Save</button>
+      <button id="undoBtn" title="Undo">↺ Undo</button>
+      <button id="redoBtn" title="Redo">↻ Redo</button>
+      <button id="exportCsvBtn" title="Export CSV">Export CSV</button>
+      <button id="importCsvBtn" title="Import CSV">Import CSV</button>
+      <button id="qatCustomizeBtn" title="Customize QAT">▼</button>
+    </div>
+
+    <!-- Ribbon Interface -->
+    <div id="ribbon">
+      <!-- Ribbon Tabs -->
+      <div id="ribbonTabs">
+        <button class="ribbonTab active" data-tab="home">Home</button>
+        <button class="ribbonTab" data-tab="insert">Insert</button>
+        <button class="ribbonTab" data-tab="pagelayout">Page Layout</button>
+        <button class="ribbonTab" data-tab="formulas">Formulas</button>
+        <button class="ribbonTab" data-tab="data">Data</button>
+        <button class="ribbonTab" data-tab="review">Review</button>
+        <button class="ribbonTab" data-tab="view">View</button>
+      </div>
+      <!-- Ribbon Content -->
+      <div id="ribbonContent"></div>
+    </div>
+
+    <!-- Formula Bar and Name Box -->
+    <div id="formulaBarContainer">
+      <input type="text" id="nameBox" readonly value="A1" />
+      <input type="text" id="formulaBar" placeholder="Enter formula or value" />
+    </div>
+
+    <!-- Extra Panel (for inline dialogs such as style editor or comment editor) -->
+    <div id="extraPanel"></div>
+
+    <!-- Spreadsheet / Worksheet Area -->
+    <div id="spreadsheetContainer">
+      <table id="spreadsheet"></table>
+      <!-- Chart Modal (for Insert Chart) -->
+      <div id="chartModal">
+        <canvas id="chartCanvas" width="400" height="200"></canvas>
+        <br />
+        <button id="closeChartBtn">Close Chart</button>
+      </div>
+    </div>
+
+    <!-- Sheet Tabs -->
+    <div id="sheetTabs">
+      <!-- Sheet buttons will be inserted here -->
+      <button id="addSheetBtn">+</button>
+    </div>
+
+    <!-- Status Bar -->
+    <div id="statusBar">
+      <span id="statusText">Ready</span>
+      <div id="zoomControl">100%</div>
+    </div>
+
+    <!-- Hidden file input for CSV import -->
+    <input type="file" id="importFile" style="display: none" />
+
+    <script src="script.js"></script>
+  </body>
+</html>
