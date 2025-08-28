@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: "Aptos Narrow", Calibri, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #000;
+  user-select: none;
+}
+#quickAccessToolbar {
+  background-color: #f3f3f3;
+  border-bottom: 1px solid #ccc;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+#quickAccessToolbar button {
+  margin-right: 4px;
+  padding: 4px;
+  border: 1px solid #bbb;
+  background-color: #fff;
+  cursor: pointer;
+}
+#ribbon {
+  border-bottom: 1px solid #ccc;
+}
+
+#ribbonTabs {
+  background-color: #e4e4e4;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+}
+#ribbonTabs button {
+  padding: 6px 10px;
+  border: none;
+  background-color: #e4e4e4;
+  cursor: pointer;
+  font-weight: bold;
+}
+#ribbonTabs button.active {
+  background-color: #fff;
+  border-top: 2px solid #4285f4;
+}
+#ribbonContent {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 6px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ribbonGroup {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  border-right: 1px solid #ccc;
+  padding-right: 10px;
+}
+.ribbonGroup:last-child {
+  border-right: none;
+}
+.ribbonGroup h4 {
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+.ribbonGroup button,
+.ribbonGroup select {
+  margin: 2px;
+  padding: 4px;
+  font-size: 10px;
+  cursor: pointer;
+}
+#formulaBarContainer {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 4px;
+}
+#nameBox {
+  width: 60px;
+  margin-right: 4px;
+  padding: 4px;
+  border: 1px solid #bbb;
+  background-color: #e4e4e4;
+}
+#formulaBar {
+  flex: 1;
+  padding: 4px;
+  border: 1px solid #bbb;
+}
+#extraPanel {
+  border-bottom: 1px solid #ccc;
+  padding: 4px;
+  display: none;
+  background: #fafafa;
+}
+#spreadsheetContainer {
+  overflow: auto;
+  height: calc(100vh - 380px);
+  background-color: #fff;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  width: 80px;
+  height: 20px;
+  padding: 2px;
+  text-align: left;
+  vertical-align: top;
+  position: relative;
+}
+th {
+  background-color: #e4e4e4;
+}
+td.selected {
+  outline: 2px solid #4285f4;
+}
+.highlighted {
+  background-color: #ffffcc !important;
+}
+.merged-hidden {
+  display: none;
+}
+#sheetTabs {
+  border-top: 1px solid #ccc;
+  background-color: #e4e4e4;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+#sheetTabs button {
+  margin-right: 4px;
+  padding: 4px 12px;
+  border: 1px solid #bbb;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+#sheetTabs button.active {
+  background-color: #fff;
+  border-bottom: 2px solid #4285f4;
+}
+#statusBar {
+  border-top: 1px solid #ccc;
+  background-color: #f3f3f3;
+  padding: 2px 8px;
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#zoomControl {
+  margin-left: 10px;
+}
+#chartModal {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border: 2px solid #4285f4;
+  padding: 10px;
+  z-index: 1000;
+  display: none;
+}
