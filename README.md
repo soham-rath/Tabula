@@ -6,7 +6,7 @@ Tabula is a lightweight, fully web-based spreadsheet application built with HTML
 
 ## Live Demo
 Try it in your browser:  
-👉 [Open Tabula Demo]()
+👉 [Open Tabula Demo](https://soham-rath.github.io/Tabula/)
 
 ---
 
