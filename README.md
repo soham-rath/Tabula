@@ -24,8 +24,8 @@ Try it in your browser:
 ## Installation
 Clone the repository:
 ```bash
-git clone https://github.com/yourusername/excel-replica.git
-cd excel-replica
+git clone https://github.com/soham-rath/Tabula.git
+cd Tabula
 ```
 Open index.html in your browser and start using the spreadsheet.
 
