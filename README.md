@@ -21,12 +21,15 @@ Try it in your browser (It might show a security risk, but there is no harmfull 
 ---
 
 ## Installation
-Clone the repository:
+1. Clone the repository:
 ```bash
 git clone https://github.com/soham-rath/Tabula.git
-cd Tabula
 ```
-Open index.html in your browser and start using the spreadsheet.
+2. Unzip the zipped folder
+
+3. Open index.html in your browser.
+
+4. Explore the full functionality!
 
 ## Contributing
 Contributions are welcome! You can help by:
